@@ -1,7 +1,9 @@
 '''
 Pedro Ramirez
-homework 2.3
-CS-521
+Class: CS 521 - Spring 1
+Date: 01/26/2023
+Homework Problem # 2_3
+Description:
 prints formula and result of user's input
 '''
 n = int(input('Enter a number: '))

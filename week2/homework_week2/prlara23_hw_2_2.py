@@ -1,7 +1,9 @@
 '''
 Pedro Ramirez
-homework 2.2
-CS-521
+Class: CS 521 - Spring 1
+Date: 01/26/2023
+Homework Problem # 2_2
+Description:
 print input 3 times as a string, integer and float
 '''
 

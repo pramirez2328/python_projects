@@ -1,7 +1,9 @@
 '''
 Pedro Ramirez
-homework 2.1
-CS-521
+Class: CS 521 - Spring 1
+Date: 01/26/2023
+Homework Problem # 2_1
+Description:
 write a program that asks the user to enter a whole number from 1 to 7.
 '''
 
