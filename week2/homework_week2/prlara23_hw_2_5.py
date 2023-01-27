@@ -37,10 +37,10 @@ for i in range(1, MAXVAL + 1):
     else:
         print(f'{i}: ')
 
-print('-------------------------------')
+print('------------------------------')
 
 # prints a line of 30 dashes to mimic previous print
-i = 0
+i = 1
 while i <= MAXVAL:
     print('-', end='')
     i += 1
