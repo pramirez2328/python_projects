@@ -2,7 +2,7 @@
 Pedro Ramirez
 Class: CS 521 - Spring 1
 Date: 2/6/2023
-Homework Problem # 3_1
+Homework Problem # 3_4
 Description:
 Read a file located in the same directory,
 validate that the file contains a single sentence of 20 words,
