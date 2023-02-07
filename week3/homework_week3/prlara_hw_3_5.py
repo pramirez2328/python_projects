@@ -16,12 +16,15 @@ import os
 
 absolute_path = os.path.dirname(__file__)
 relative_path = "cs521_3_5_input.txt"
+# open the file
 input_file = open(os.path.join(absolute_path, relative_path), 'r')
 students_records = []
 
 for line in input_file:
     line = line.split(',')
+    # remove the trailing
     name, id, gpa = line[0].strip(), line[1].strip(), line[2].strip()
+    # append the tuple to the list
     students_records.append((name.replace('\xa0', ' '), id, gpa))
 
 print()
