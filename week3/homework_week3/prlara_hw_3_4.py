@@ -17,14 +17,20 @@ import os
 try:
     absolute_path = os.path.dirname(__file__)
     relative_path = "cs521_3_4_input.txt"
+    # open files
     INPUT_FILE = open(os.path.join(absolute_path, relative_path), 'r')
     OUTPUT = open(os.path.join(absolute_path, "cs521_3_4_output.txt"), 'w')
     WORDS_ALLOWED = 20
     WORDS_PER_LINE = 5
+    # count the number of lines in the file
     lines_per_file = open(os.path.join(absolute_path, relative_path), 'r')
     single_line = len(lines_per_file.readlines()) == 1
 
     for line in INPUT_FILE:
+        '''
+        check if the file for multiple lines
+        or if the sentence has less than 20 words
+        '''
         if len(line.split()) != WORDS_ALLOWED or not single_line:
             print(
                 "Error: The file doesn\'t contain a 20 words "
@@ -36,6 +42,7 @@ try:
             sentence_splited = line.split()
             count = 1
             sentence = ''
+            # break the sentence into 4 lines of 5 words
             for value in sentence_splited:
                 sentence += value + ' '
                 if count == WORDS_PER_LINE:
@@ -45,6 +52,7 @@ try:
                     sentence = ''
                 count += 1
             print(f"Success! Output written to: {relative_path}")
+# if the  file doesn't exist throw an error
 except IOError:
     print("Error: File does not appear to exist.")
     sys.exit()
