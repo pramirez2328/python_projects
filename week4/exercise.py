@@ -35,4 +35,4 @@ def my_func(str_arg):
 print(my_func('pedro'))
 
 
-print(''.join(sorted([x for x in 'andrea'])))
+print(''.join(sorted([x for x in 'la soledad'])))
