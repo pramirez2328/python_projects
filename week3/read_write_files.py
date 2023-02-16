@@ -1,5 +1,6 @@
 import os
 
+print(__name__ == '__main__')
 absolute_path = os.path.dirname(__file__)
 relative_path = "../week3/src_input/in_file1.txt"
 reading_path = os.path.join(absolute_path, relative_path)
