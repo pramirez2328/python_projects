@@ -8,7 +8,7 @@ class MakeApiCall:
         if response.status_code == 200:
             print("----sucessfully fetched the data")
             # self.formatted_print(response.json())
-            print(response.json().get('value'))
+            print(response.json()['value'])
         else:
             print(f"Hello person, there's a {response.status_code} error with your request")
 
